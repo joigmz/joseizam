@@ -6,3 +6,34 @@ body {
     height:100%;
     width:100%;
     }
+
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    background-color: white;
+    z-index: +1;
+}
+
+.landing-navbar{
+    margin: 0px 10% 0px 10%;
+    padding: 16px 0px 16px 0px;
+    height: 44px;
+    font-size: 14px;
+}
+
+.links a{
+    margin-top: 3px;
+    padding: 10px 16px 10px 16px;
+    text-decoration: none;
+    color: #757575;
+    float: left;
+}
+
+.links a:hover{
+    text-decoration: none;
+    background-color: #f3f6fa;
+    color: black;
+    border-radius: 22px;
+}
+

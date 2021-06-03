@@ -167,4 +167,10 @@ body {
         margin-bottom: 5%;
         float: none;
     }
+    .box-information-media{
+        width: 90%;
+        height: 45%;
+        float: left;
+     
+    }
   }

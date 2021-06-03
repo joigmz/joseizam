@@ -43,7 +43,7 @@ body {
 .text {
     background-color: white;
     width: 65%;
-    height: 800px;
+    height: 1600px;
     float: right;
     border-radius: 24px;
     box-shadow: 1px 4px 3px 0 rgba(0,0,0,.24);
@@ -94,6 +94,55 @@ body {
 
 .presentation-footer{
     height: 40px;
+}
+
+.information-box{
+    height: 25%;
+    width: 90%;
+    margin: auto;
+    margin-top: 24px;
+    border-width: 1px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.title{
+    margin-top: 12px;
+    font-size:x-large;
+    font-family: Poppins,sans-serif;
+    font-weight:lighter;
+    color: #868693;
+}
+.box-information-l{
+    margin-top: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 45%;
+    height: 33%;
+    word-wrap: break-word;
+    background-color: white;
+    box-shadow: 1px 4px 3px 0 rgba(0,0,0,.24);
+    border-radius: 12px;
+    float: left;
+}
+
+
+.box-information-r{
+    margin-top: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 45%;
+    height: 33%;
+    word-wrap: break-word;
+    background-color: white;
+    box-shadow: 1px 4px 3px 0 rgba(0,0,0,.24);
+    border-radius: 12px;
+    float: right;
+}
+
+.definition{
+    color: #868693;
+    font-size:smaller;
+    margin-top: 12px;
 }
 
 @media screen and (max-width: 1000px) {

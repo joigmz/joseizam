@@ -77,7 +77,16 @@ WSGI_APPLICATION = 'joseizam.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = eval(os.environ.get('DATABASES_APP_JOSEIZAM'))
+DATABASES = {
+    'default': {
+        'ENGINE': os.environ.get('ENGINE_APP_JOSEIZAM'),
+        'NAME': os.environ.get('NAME_APP_JOSEIZAM'),
+        'USER': os.environ.get('USER_APP_JOSEIZAM'),
+        'PASSWORD': os.environ.get('PASSWORD_APP_JOSEIZAM'),
+        'HOST': os.environ.get('HOST_APP_JOSEIZAM'),
+        'PORT': os.environ.get('PORT_APP_JOSEIZAM'),
+    }
+}
 
 
 # Password validation

@@ -1,7 +1,27 @@
+.layout{
+  margin: 0px 5% 0px 5%;
+}
+
 .sobre-mi{
   text-align: center;
 }
 
+.contenedor-foto-descripcion-sobre-mi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-sobre-mi{
+  height: 10rem;
+  border-radius: 50%;
+}
+
 .descripcion-sobre-mi{
-  
+  padding: 0px 5% 0px 5%;
+}
+
+.datos-sobre-mi{
+  display: flex;
+  justify-content: space-around;
 }

@@ -2,347 +2,87 @@
 {% load static %}
 
 {% block content %}
- <!--========== HEADER ==========-->
-<header class="l-header" id="header">
-    <nav class="nav bd-container">
-        <a href="#" class="nav__logo">José</a>
 
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link active-link">
-                        <i class="bx nav__icon bx-home"></i>Top
-                    </a>
-                </li>
+<div class="sobre-mi">
+    <h1>
+        Sobre mi
+    </h1>
+</div>
+<div class="contenedor-foto-descripcion-sobre-mi">
+    <img class= "foto-sobre-mi" src="{% static 'img/1622608198300.jpeg' %}" alt="Yo">
+    <div class="descripcion-sobre-mi">
+        <p>
+            Mi nombre es José Izam, soy estudiante de Magister en ciencas de datos e Ingenieria
+            civil industrial en la Universidad Adolfo Ibañez, actualmente me encuentro desarrollando
+            una tesis para obterner el grado de magister, la cual trata sobre optimizacion y pricing 
+            en el area del Retail.
+            Los ramos que más me gustaron en la Universidad fueron programacion, bases de datos,
+            estructura de datos, algebra lineal, Mineria de datos y Machine learning.
+            <br><br>
+            Mi area de conocimientos mas solidos es la de Machine learning supervisado,
+            Regresion lineal, lasso, Ridge, regresion logistica, SVM, arboles de desicion y 
+            KNN.
+            <br><br>
+            Por otra parte, consto con conosimientos solidos en Algebra lineal y Estadistica
+            habilidades poco valoradas pero extremandamente importantes para esta area.
+        </p>
+    </div>
+</div>
+ 
+<div class="datos-sobre-mi">
+    <div class="tecnologias">
+        <h1>Tecnologias</h1>
+        <ul>
+            <li>R</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Excel</li>
+            <li>Power BI</li>
+            <li>Git</li>
+        </ul>
+    </div>
+    <div class="Educacion">
+        <h1>Educacion</h1>
+        <dl>
+            <dt>MASTER OF SCIENCE IN DATA SCIENCE</dt>
+            <dd>Universidad Adolfo Ibáñez 2021 – (Cursando)</dd>
+            <dt>INGENIERÍA CIVIL INDUSTRIAL</dt>
+            <dd>Universidad Adolfo Ibáñez 2017 – (Cursando)</dd>
+        </dl>
+    </div>
+    <div class="Logros academicos">
+        <h1>Logros academicos</h1>
+        <dl>
+            <dt>Banco de Chile | Estudiante</dt>
+            <dd>Beca Padre Hurtado pago total de estudios superiores,<br>
+                por excelencia académica en el colegio.</dd>
+            <dt>Colegio Hispano Americano</dt>
+            <dd>Reconocimiento de egreso como el alumno destacado en <br>
+                la asignatura de matemáticas.</dd>
+        </dl>
+    </div>
+    <div class="Idiomas">
+        <h1>Idiomas</h1>
+        <ul>
+            <li>Español</li>
+            <li>Ingles</li>
+        </ul>
+    </div>
+</div>
 
-                <li class="nav__item">
-                    <a href="#profile" class="nav__link">
-                        <i class="bx nav__icon bx-user"></i>Perfil
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#education" class="nav__link">
-                        <i class="bx nav__icon bx-book"></i>Educacion
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#certificates" class="nav__link">
-                        <i class="bx nav__icon bx-award"></i>Proyectos
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#experience" class="nav__link">
-                        <i class="bx nav__icon bx-briefcase-alt"></i>Experiencia
-                    </a>
-                </li>
-                
-                <li class="nav__item">
-                    <a href="#goals" class="nav__link">
-                        <i class="bx nav__icon bx-award"></i>Logros
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#skills" class="nav__link">
-                        <i class="bx nav__icon bx-receipt"></i>Skills
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#lenguages" class="nav__link">
-                        <i class="bx nav__icon bx-link-external"></i>Idiomas
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#interests" class="nav__link">
-                        <i class="bx nav__icon bx-receipt"></i>intereses
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-            <i class="bx bx-grid-alt"></i>
-        </div>
-    </nav>
-</header>
-
-<main class="l-main bd-container">
-    <!-- All elements within this div, is generated in PDF -->
-    <div class="resume" id="area-cv">
-        <div class="resume__left">
-            <!--========== HOME ==========-->
-            <section class="home" id="home">
-                <div class="home__container section bd-grid">
-                    <div class="home__data bd-grid">
-                        <img src={% static "img/1622608198300.jpeg" %} alt="" class="home__img">
-                        
-                        <h1 class="home__title">José <b>Izam</b></h1>
-                        <h3 class="home__profession">Data Scientist</h3>
-                    
-                        <div class="">
-                            <a download="" href="{% static "pdf/Jose Izam-Resume.pdf" %%}" class="home__button-movil">Download</a>
-                        </div>
-                    </div>
-
-                    <div class="home__address bd-grid">
-                        <span class="home__information">
-                            <i class="bx home__icon bx-map"></i>Santiago, Chile
-                        </span>
-                        <span class="home__information">
-                            <i class="bx home__icon bx-envelope"></i>jose.izam99@gmail.com
-                        </span>
-                        <span class="home__information">
-                            <i class="bx home__icon bx-phone"></i>+569 79945385
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Theme change button -->
-                <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
-
-                <!-- Button to generate and download the pdf. Available for desktop. -->
-                <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
-            </section>          
-            
-            <!--========== SOCIAL ==========-->
-            <section class="social section">
-                <h2 class="section-title">SOCIAL</h2>
-                <div class="social__container bd-grid">
-                    <a href="https://www.linkedin.com/in/jose-izam/" target="_blank" class="social__link">
-                        <i class="bx social__icon bxl-linkedin-square"></i> @jose izam
-                    </a>
-                    <a href="https://github.com/joigmz" target="_blank" class="social__link">
-                        <i class="bx social__icon bxl-github"></i> @joigmz
-                    </a>
-                </div>
-            </section>
-
-            <!--========== PROFILE ==========-->
-            <section class="profile section" id="profile">
-                <h2 class="section-title">PERFIL</h2>
-                <p class="profile__description">
-                    Alumno Master en ciencias de datos, ayudante instructor y corrector del ramo programación,
-                    presto atención al detalle, comprometido, planificado y ordenado. Se programar en Python,
-                    y utlizar frameworks como django, flask y Dash. Tengo conocimiento en Data Science
-                    y el uso de módulos Pandas, Numpy, scikit-learn, Matplotlib, Scipy, OpenCV, OS, Requests, Tensorflow-keras,
-                    Plotly entre otros y utilizó Jupyter lab, también tengo conocimientos en MS Excel y consultas SQL.
-                </p>
-            </section>
-            
-            <!--========== EDUCATION ==========-->
-            <section class="education section" id="education">
-                <h2 class="section-title">EDUCACIÓN</h2>
-                <div class="education__container bd-grid">
-
-                    <div class="education__content">
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-
-                        </div>
-                        <div class="education__data bd-grid">
-                            <h3 class="education__title">MASTER OF SCIENCE IN DATA SCIENCE</h3>
-                            <span class="education__studies">Universidad Adolfo Ibáñez</span>
-                            <span class="education__year">2021 – (Cursando)</span>
-                        </div>
-                    </div>
-
-                    <div class="education__content">
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-                        </div>
-                        <div class="education__data bd-grid">
-                            <h3 class="education__title">INGENIERÍA CIVIL INDUSTRIAL</h3>
-                            <span class="education__studies">Universidad Adolfo Ibáñez</span>
-                            <span class="education__year">2021 – (Cursando)</span>
-                        </div>
-                    </div>
-
-                    <div class="education__content">
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                        </div>
-                        <div class="education__data bd-grid">
-                            <h3 class="education__title">LICENCIATURA INGENIERÍA CIVIL INDUSTRIAL </h3>
-                            <span class="education__studies">Universidad Adolfo Ibáñez </span>
-                            <span class="education__year">2017 – 2020</span>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-        </div>
-
-        <div class="resume__right">
-            <!--========== PROJECTS ==========-->
-            <section class="certificate section" id="certificates">
-                <h2 class="section-title">Proyectos</h2>
-
-                <div class="certificate__container bd-grid">
-                    <div class="certificate__content">
-                        <h3 class="certificate__title">
-                            Projectzero
-                        </h3>
-                        <p class="certificate__decription">
-                            Plataforma para encontrar prácticas remuneradas para estudiantes,
-                            en la plataforma he logrado realizar un login para poder subir ofertas laborales a un
-                            feed donde estan publicados los trabajos.
-                            Utilice Python, Django y Postgres para el backend y html, css y javascript para el frontend
-                            y esta subida en heroku, asociada a github para realizar deploys automaticos.
-                            <a href="https://projectzerocl.herokuapp.com/" target="_blank">¡Pagina del proyecto!</a>
-                        </p>
-                    </div>
-                    <div class="certificate__content">
-                        <h3 class="certificate__title">
-                            Plotly-Dash
-                        </h3>
-                        <p class="certificate__decription">
-                            Web app, basada en plotly y el framework Dash para implementar dashboard dinamico para visualizar el algoritmo de
-                            KNN sobre unos datos respecto a la cantiadad de vecinos que tenga, esta subida en heroku, asociada a github para
-                            realizar deploys automaticos.
-                            <a href="https://plotly-dash-practice.herokuapp.com/" target="_blank">¡Pagina del proyecto!</a>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <!--========== EXPERIENCE ==========-->
-            <section class="experience section" id="experience">
-                <h2 class="section-title">Experiencia laboral pregrado</h2>
-
-                <div class="experience__container bd-grid">
-                    <div class="experience__content">
-                        <div class="experience__time">
-                            <span class="experience__rounder"></span>
-                        </div>
-
-                        <div class="experience__data bd-grid">
-                            <h3 class="experience__title">Ayudante de Cátedra Programación</h3>
-                            <span class="experience__company">2 Semestres</span>
-                            <p class="experience__description">
-                                <ul class="skills__data">
-                                    <li>
-                                        <span class="skills__circle"></span> Planificación de ayudantías
-                                    </li>
-                                    <li>
-                                        <span class="skills__circle"></span> Instructor ayudantías
-                                    </li>
-                                    <li>
-                                        <span class="skills__circle"></span> Corrector de controles
-                                    </li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--========== ACADEMICS GOALS ==========-->
-            <section class="certificate section" id="goals">
-                <h2 class="section-title">Logros Academicos</h2>
-
-                <div class="certificate__container bd-grid">
-                    <div class="certificate__content">
-                        <h3 class="certificate__title">
-                            Banco de Chile | Estudiante
-                        </h3>
-                        <p class="certificate__decription">
-                            Beca Padre Hurtado pago total de estudios superiores, por excelencia académica
-                            en el colegio.
-                        </p>
-                    </div>
-                    <div class="certificate__content">
-                        <h3 class="certificate__title">
-                            Colegio Hispano Americano
-                        </h3>
-                        <p class="certificate__decription">
-                            Reconocimiento de egreso como el alumno más destacado en la asignatura de matemáticas.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!--========== Habilidades ==========-->
-            <section class="languages section" id="skills">
-                <h2 class="section-title">SKILLS</h2>
-                <div class="languages__container">
-                    <ul class="languages__content bd-grid">
-                        <li class="languages__name">
-                            <span class="languages__circle"></span> Python
-                        </li>
-                        <li class="languages__name">
-                            <span class="languages__circle"></span> SQL
-                        </li>
-                        <li class="languages__name">
-                            <span class="languages__circle"></span> MS excel
-                        </li>
-                        <li class="languages__name">
-                            <span class="languages__circle"></span> Git
-                        </li>
-                        <li class="languages__name">
-                            <span class="languages__circle"></span> Heroku
-                        </li>
-                        <li class="languages__name">
-                            <span class="languages__circle"></span> GCP
-                        </li>
-                        <li class="languages__name">
-                            <span class="languages__circle"></span> AWS
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <!--========== LANGUAGES ==========-->
-            <section class="languages section" id="lenguages">
-                <h2 class="section-title">Idiomas</h2>
-                <div class="languages__container">
-                    <ul class="languages__content bd-grid">
-                        <li class="languages__name">
-                            <span class="languages__circle"></span> Español
-                        </li>
-                        <li class="languages__name">
-                            <span class="languages__circle"></span> Ingles
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            
-            <!--========== INTERESTS ==========-->
-            <section class="interests section" id="interests">
-                <h2 class="section-title">Intereses</h2>
-
-                <div class="interests__container bd-grid">
-                    <div class="interests__content">
-                        <i class="bx interests__icon bxs-map-alt"></i>
-                        <span class="interests__name">Acampar</span>
-                    </div>
-
-                    <div class="interests__content">
-                        <i class='bx interests__icon bx-credit-card-alt'></i>
-                        <span class="interests__name">Finanzas personales</span>
-                    </div>
-
-                    <div class="interests__content">
-                        <i class='bx interests__icon bx-football'></i>
-                        <span class="interests__name">Futbol</span>
-                    </div>
-
-                    <div class="interests__content">
-                        <i class='bx interests__icon bxs-game'></i>
-                        <span class="interests__name">Juegos</span>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>        
-</main>
-
-<!--========== SCROLL TOP ==========-->
-<a href="#" class="scrolltop" id="scroll-top">
-    <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
-</a>
+<div class="experiencia-laboral">
+    <h1>Experiencia laboral</h1>
+    <dl>
+        <dt>Ayudante de Cátedra Programación | Universidad Adolfo Ibañez <b>(2 Semestres)</b></dt>
+        <dd>Planificación de ayudantías</dd>
+        <dd>Instructor ayudantías</dd>
+        <dd>Corrector de controles</dd>
+        <br>
+        <dt>Practicante universitario | Credicorp Capitals <b>(Ago 2021- Oct 2021)</b></dt>
+        <dd>Realización de queries SQL de alta complejidad en grandes datasets.</dd>
+        <dd>Creación de reportes/visualizaciones de datos con Power-Bi y Python.</dd>
+        <dd>Apoyo en el levantamiento y entrega de información según requerimientos del área.</dd>
+    </dl>
+</div>
 
 {% endblock %}

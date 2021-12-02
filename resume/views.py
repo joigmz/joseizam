@@ -16,7 +16,7 @@ def project(request):
     client = tweepy.Client(bearer_token=bearer_token, return_type=dict)
 
 
-    tweets = client.search_recent_tweets(query='IzkiaxBoricMV', max_results=50)
+    tweets = client.search_recent_tweets(query='IzkiaxBoricMV')
 
     context = {
        'data': tweets['data'],

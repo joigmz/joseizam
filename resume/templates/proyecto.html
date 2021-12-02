@@ -2,5 +2,20 @@
 {% load static %}
 
 {% block content %}
-    <h1>Hola</h1>
+    <h1>¿Que es esto?</h1>
+    <p>
+    Es el desarrollo de un solo proyecto de principio a fin, la ciencia de datos para mi dista mucho de como se enseña, a lo 
+    que es en realidad, no es solo implementar un modelo del dataset Iris o Titanic con data del 1900', tiene que ver con la 
+    capacidad de captar los datos en tiempo real por medio de una api por ejemplo, procesarlos, almacenarlos en una base de 
+    datos alojada en servicios Cloud, entrenar un modelo y obtener resultados que sean un aporte.
+    </p>
+
+    <h2>Los datos</h2>
+    <h3> ¿Que dice la gente respecto a #{{ hashtag }}?</h3>
+    <b>Tweets</b>
+    <ol>
+    {% for tweet in data %}
+        <li>{{tweet.text}}</li>
+    {% endfor %}
+    </ol>
 {% endblock %}

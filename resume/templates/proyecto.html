@@ -2,22 +2,81 @@
 {% load static %}
 
 {% block content %}
-    <h1>Visualizaciones de kernels</h1>
+    <h1 style="text-align: center;">Gráficos históricos de distintos tipos de activos</h1>
     <p>
-        link proyecto: <a href="https://kernels-visualizations.herokuapp.com/">kernels-visualizations</a>
+        Para este mini proyecto utilice <a href="https://plotly.com/python/" target="_blank">Plotly Dash</a>
+        y heroku para mostrar los gráficos en la web, los datos provienen de la 
+        <a href="https://fintual.cl/api-docs/index.html" target="_blank">api de fintual</a> 
+        y son procesados en python con módulos como Numpy y Pandas.
     </p>
-    <h1>Graficos historicos de distintos tipos de activos</h1>
-    <p>
+    <div class="box-previews-grid">
+        <div class="box-previews-flex">
+            <img class= "page-preview" src="{% static 'img/fin1.gif' %}" alt="fin1">
+        </div>
+        <div class="box-previews-flex">
+            <img class= "page-preview" src="{% static 'img/fin2.gif' %}" alt="fin2">
+        </div>
+    </div>
+    <p style="text-align: center;">
         link proyecto: <a href="https://fintual-api-plotlydash.herokuapp.com/">fintual-api-plotlydash</a>
     </p>
-    <h1>Cubo educativo</h1>
-    <p>
-        link proyecto: <a href="https://cubo-educativo.herokuapp.com/">cubo-educativo</a>
-    </p>
-    <h1>Ke horario</h1>
-    <p>
-        link proyecto: <a href="https://kehorario.herokuapp.com/">kehorario</a>
+    <p style="text-align: center;">
+        link Repo: <a href="https://github.com/joigmz/fintual-api">GitHub</a>
     </p>
 
+    <br>
+
+    <h1 style="text-align: center;">Visualizaciones de kernels</h1>
+    <p>
+        Este proyecto nace por la necesidad de encontrar una interpretación visual de 
+        los kernels más comunes en la actualidad, los kernels son herramientas que cambian
+        la dimensionalidad de los datos para realizar mejores clasificaciones, regresiones o 
+        clasificaciones. <br><br>
+        Las Tecnologías utilizadas son <a href="https://plotly.com/python/" target="_blank">Plotly Dash</a>
+        y heroku para mostrar los gráficos en la web, los datos son generados por grillas
+        y son procesados en python con módulos como Numpy y Pandas.
+    </p>
+    <div class="box-previews-grid">
+        <div class="box-previews-flex">
+            <img class= "page-preview" src="{% static 'img/k1.gif' %}" alt="k1">
+        </div>
+        <div class="box-previews-flex">
+            <img class= "page-preview" src="{% static 'img/k2.gif' %}" alt="k2">
+        </div>
+    </div>
+    <p style="text-align: center;">
+        link proyecto: <a href="https://kernels-visualizations.herokuapp.com/">kernels-visualizations</a>
+    </p>
+    <p style="text-align: center;">
+        link Repo: <a href="https://github.com/joigmz/kernels-visualizations">GitHub</a>
+    </p>
+
+    <br>
+
+    <h1 style="text-align: center;">Ke horario</h1>
+    <p>
+        Que horario, es mi proyecto más largo ha cambiado varias veces de rumbo y su nombre 
+        no significa nada realmente, es mi startup, mi proposito es solucionar algun problema 
+        con las tecnologías que conozco. <br><br>
+        Las tecnologías utilizadas son Django y Heroku para tener una interfaz web, Pandas, Numpy
+        y Postgres SQL para el manejo de datos. <br><br>
+        En un futuro planeo integrar algoritmos de ML supervisado para recomendaciones personalizadas 
+        según los gustos de los usuarios y algoritmos de ML no supervisado para determinar los
+        distintos tipos de segmentos que tenga en mi aplicación.
+    </p>
+    <div class="box-previews-grid">
+        <div class="box-previews-flex">
+            <img class= "page-preview" src="{% static 'img/ke1.gif' %}" alt="ke1">
+        </div>
+        <div class="box-previews-flex">
+            <img class= "page-preview" src="{% static 'img/ke2.gif' %}" alt="ke2">
+        </div>
+    </div>
+    <p style="text-align: center;">
+        link proyecto: <a href="https://kehorario.herokuapp.com/">kehorario</a>
+    </p>
+    <p style="text-align: center;">
+        link Repo: <a href="https://github.com/joigmz/kehorario">GitHub</a>
+    </p>
     </ol>
 {% endblock %}

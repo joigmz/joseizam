@@ -76,6 +76,23 @@
 .shadow:hover{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.box-previews-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box-previews-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-preview{
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.105);
+  border-radius: 24px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 3rem;
+  width: 70%;
+}
 @media screen and (max-width: 996px) {
   .g1c{
     padding: 0rem 1rem 0rem 1rem;
@@ -94,5 +111,8 @@
   }
   .foto-sobre-mi{
     width: 40%;
+  }
+  .box-previews-grid{
+    grid-template-columns: 1fr;
   }
 }

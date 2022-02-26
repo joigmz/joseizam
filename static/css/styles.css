@@ -77,9 +77,18 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 @media screen and (max-width: 996px) {
+  .g1c{
+    padding: 0rem 1rem 0rem 1rem;
+  }
   .g2c{
     grid-template-columns: 1fr;
+    padding: 0rem 1rem 0rem 1rem;
   }
+
+  .br10{
+    border-radius: 1rem;
+  }
+
   .contenedor-foto-descripcion-sobre-mi{
     grid-template-columns: 1fr;
   }

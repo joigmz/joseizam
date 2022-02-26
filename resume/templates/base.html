@@ -5,12 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <script src="{% static 'js/main.js' %}" type="text/javascript"></script>
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
         <title>Resume</title>
     </head>
     <body>
         <div class="barnav">
-            <h3><a class="link-barnav" href="{% url 'index' %}" >Inicio</a></h3>
-            <h3><a class="link-barnav" href="{% url 'project' %}">Proyecto</a></h3>
+            <h3><a class="link-barnav" href="{% url 'index' %}">Inicio</a></h3>
+            <h3><a class="link-barnav" href="{% url 'project' %}">Proyectos</a></h3>
         </div>
         <hr>
         <div class="layout">

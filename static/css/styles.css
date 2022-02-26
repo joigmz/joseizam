@@ -9,14 +9,15 @@
 }
 
 .link-barnav{
-  color: inherit;
+  color: black;
   text-decoration: none;
   font-size: larger;
-  padding-left: 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  text-align: center;
 }
 
 .link-barnav:hover{
-  text-decoration: underline;
+  color: rgba(55, 125, 210, 0.858);
 }
 
 .layout{
@@ -29,13 +30,22 @@
 }
 
 .contenedor-foto-descripcion-sobre-mi{
+  display: grid;
+  grid-template-columns: 25vw 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-img-about-me{
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .foto-sobre-mi{
-  height: 10rem;
+  width: 100%;
   border-radius: 50%;
 }
 
@@ -43,9 +53,37 @@
   padding: 0px 5% 0px 5%;
 }
 
-.datos-sobre-mi{
-  display: flex;
-  justify-content:space-around;
+.g1c{
+  display: grid;
+  grid-template-columns: 1fr;
   border-style: solid;
+  padding: 0rem 7rem 0rem 7rem;
   margin-top: 1rem;
+}
+
+.g2c{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-style: solid;
+  padding: 0rem 7rem 0rem 7rem;
+  margin-top: 1rem;
+}
+
+.br10{
+  border-radius: 10rem;
+}
+
+.shadow:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+@media screen and (max-width: 996px) {
+  .g2c{
+    grid-template-columns: 1fr;
+  }
+  .contenedor-foto-descripcion-sobre-mi{
+    grid-template-columns: 1fr;
+  }
+  .foto-sobre-mi{
+    width: 40%;
+  }
 }

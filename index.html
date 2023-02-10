@@ -7,10 +7,11 @@
         <link rel="icon" type="image/png" sizes="64x64" href="static/img/goat.png">
         <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
         <script src="https://cdn.tailwindcss.com"></script>
+
         <title>Resume</title>
     </head>
     <body>
-        <div class="grid grid-cols-1 md:grid-cols-4">
+        <div class="grid grid-cols-1 md:grid-cols-4" id="pageprint">
             <!--Left-->
             <div class="col-span-1 bg-gray-100 px-3">
                 <div class="flex justify-center mt-10">
@@ -239,7 +240,34 @@
                 </div>
 
             </div>
+
         </div>
+
     </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+            function generatePDF() {
+                const element = document.body;
+                var opt = {
+                    margin:       -10,
+                    filename:     'Jose Izam-CV.pdf',
+                    html2canvas:  { scale: 2 },
+                    jsPDF:{  
+                            orientation: 'l',
+                            unit: 'mm',
+                            format: 'a4',
+                            floatPrecision: 16
+                            }
+                };
+                html2pdf().set(opt).from(element).save(); 
+                }
+                
+                function downloadCode(){
+                generatePDF();
+            }
+    </script>
 </html>
 

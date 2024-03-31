@@ -84,7 +84,7 @@ function getSections(sections) {
 
 async function getManifiest() {
     try {
-        const response = await fetch('../manifiest.json');
+        const response = await fetch('manifiest.json');
         if (!response.ok) {
             throw new Error('Error al cargar el archivo JSON');
         }

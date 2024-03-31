@@ -72,13 +72,21 @@ function createBlock(block) {
     const pJobTitle = document.createElement("p");
     const spanDate = document.createElement("span");
     const pDescription = document.createElement("p");
+    const url = document.createElement("a");
 
     // Agregar clases
     divOuter.classList.add("rounded-xl", "p-3", "shadow", "border", "border-gray-50", "my-2");
     divInner.classList.add("grid");
-    pJobTitle.classList.add("text-neutral-900");
+    pJobTitle.classList.add("text-neutral-700", "font-medium");
     spanDate.classList.add("text-neutral-600", "text-xs");
     pDescription.classList.add("text-sm");
+    
+    if (block.URL) {
+        url.classList.add("hover:text-indigo-500","w-fit")
+        url.textContent = "Link del proyecto";
+        url.href = block.URL;   
+        url.target = "_blank";
+    }
 
     // Agregar contenido
     pJobTitle.textContent = block.Title;
@@ -90,6 +98,7 @@ function createBlock(block) {
     divInner.appendChild(pJobTitle);
     divInner.appendChild(spanDate);
     divInner.appendChild(pDescription);
+    divInner.appendChild(url);
 
     return divOuter
 }

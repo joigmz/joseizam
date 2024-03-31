@@ -1,0 +1,69 @@
+{
+    "Profile":{
+        "Name":"José Izam",
+        "Title":"Data Engineer",
+        "Description":"Tengo pasión sobre el mundo de las tecnologías, no me limito a aprender solo aquellas relacionadas al Data Science, también exploró áreas como el desarrollo Web tanto Backend como Frontend, por otra parte, tengo capacidad para resolver y llevar proyectos de forma autónoma o en equipo.",
+        "Location":"Santiago, Chile",
+        "Email":"Jose.izam99@gmail.com",
+        "ProfileIMG":null
+    },
+    "Social": {
+        "Linkedin":{
+            "URL":"https://www.linkedin.com/in/jose-izam/",
+            "Title":"José Izam"
+        },
+        "GitHub":{
+            "URL":"https://github.com/joigmz",
+            "Title":"@joigmz"
+        }
+    },
+    "Education": [
+        {
+            "Title":"Ingeniería Civil Industrial, Mención TI",
+            "Institution":"Universidad Adofo Ibañez (2017-2022)",
+            "Duration":"(2017-2022)"
+        }
+    ],
+    "Lenguajes": ["Español nativo","Ingles B1"],
+    "Section":[
+        {
+            "Title" : "Experiencia Laboral",
+            "Subtitle" : null,
+            "block" : [
+                {
+                    "Title":"Data Engineer - Justo YC-S20",
+                    "Duration":"Enero 2022 - Abril 2024",
+                    "Description":"En Justo ingrese con la meta de co-crear un área de datos solicida y confiable para esto me contrataron como Data Engineer en el área de BI. Mi primero proyecto fue automatizar la ingesta de datos de la BBDD interna de BI (Postgres), para esto implemente Airflow en un servidor de Digital Ocean."
+                },
+                {
+                    "Title":"Practica profesional - Credicorp",
+                    "Duration":"Agosto 2021 - Octubre 2021",
+                    "Description": null
+                },
+                {
+                    "Title":"Ayudante programación - Universidad Adolfo Ibañez",
+                    "Duration":"2 Semestres",
+                    "Description":"Realizaba ayudantias de programación en Python, donde revisaba controles y ejercicios practicos para los alumnos."
+                }
+            ]
+        },
+        {
+            "Title": "Proyectos",
+            "Subtitle" : null,
+            "block": [
+                {
+                    "Title":"Hase",
+                    "Duration":"Noviembre 2022 - Actualidad",
+                    "Description": null,
+                    "URL": null
+                },
+                {
+                    "Title":"RoomieHood",
+                    "Duration":"Marzo 2022 - Diciembre 2022",
+                    "Description": null,
+                    "URL": null
+                }
+            ]
+        }
+    ]
+}

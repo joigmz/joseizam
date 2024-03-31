@@ -7,18 +7,19 @@
         <link rel="icon" type="image/png" sizes="64x64" href="static/img/goat.png">
         <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
         <script src="https://cdn.tailwindcss.com"></script>
-
+        <script src="static/js/main.js"></script>
         <title>Resume</title>
     </head>
     <body>
-        <div class="grid grid-cols-1 md:grid-cols-4" id="pageprint">
+        <div class="grid grid-cols-1 md:grid-cols-4">
             <!--Left-->
             <div class="col-span-1 bg-gray-100 px-3">
                 <div class="flex justify-center mt-10">
                     <img class= "w-1/3 rounded-full" src="static/img/1622608198300.jpeg" alt="Yo">
                 </div>
-                <h1 class="font-semibold text-center text-lg mt-5">José Izam</h1>
-                <p class="text-neutral-800 text-center">Data Scientist</p>
+                <h1 class="font-semibold text-center text-lg mt-5" id="profileName"></h1>
+                <p class="text-neutral-800 text-center" id="profileTitle"></p>
+                <p class="text-neutral-600 text-sm p-2" id="profileDescription"></p>
 
                 <div class="mt-2 text-sm">
                     <div class="flex">
@@ -26,13 +27,13 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                         </svg>
-                        <p class="ml-1">Santiago, Chile</p>
+                        <p class="ml-1" id="profileLocation"></p>
                     </div>
                     <div class="flex">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                         </svg>
-                        <p class="ml-1">Jose.izam99@gmail.com</p>
+                        <p class="ml-1" id="profileEmail"></p>
                     </div>
                 </div>
                 <!--Social-->
@@ -41,23 +42,13 @@
                     <div class="grid grid-cols-2">
                         <div class="flex items-center">
                             <img src="static/img/LI-In-Bug.png" class='h-4 mr-1' alt="">
-                            <a href="https://www.linkedin.com/in/jose-izam/" class="text-neutral-800 hover:text-indigo-500">José Izam</a>
+                            <a id="socialLinkedin" href="" class="text-neutral-800 hover:text-indigo-500"></a>
                         </div>
                         <div class="flex items-center">
                             <img src="static/img/github-mark.png" class='h-4 mr-1' alt="">
-                            <a href="https://github.com/joigmz" class="text-neutral-800 hover:text-indigo-500">@joigmz</a>
+                            <a id="socialGitHub" href="" class="text-neutral-800 hover:text-indigo-500"></a>
                         </div>
                     </div>
-                </div>
-                <!--Profile-->
-                <div class="mt-8">
-                    <h1 class="text-2xl tracking-[0.3rem] my-3">Perfil</h1>
-                    <p class="text-neutral-600 text-sm">
-                        Tengo pasión sobre el mundo de las tecnologías, no me limito a 
-                        aprender solo aquellas relacionadas al Data Science, también exploró 
-                        áreas como el desarrollo Web tanto Backend como Frontend, por otra parte, 
-                        tengo capacidad para resolver y llevar proyectos de forma autónoma o en equipo.
-                    </p>
                 </div>
 
                 <!--Education-->
@@ -122,122 +113,9 @@
                 </div>
 
             </div>
+
             <!--Right-->
-            <div class="col-span-3 px-3">
-                <!--Work Experience-->
-                <div>
-                    <h1 class="text-2xl tracking-[0.3rem] mt-10">Experiencia Laboral</h1>
-
-                    <div class="rounded-xl p-3 shadow border border-gray-50 my-2">
-                        <div class="flex items-center">
-                            <div class="ml-1">
-                                <div class="">
-                                    <p class=>Data Scientist - Justo YC-S20</p>
-                                    <span class="text-neutral-600 text-sm">Enero 2022 - Actualidad</span>
-                                </div>
-                                <p class="text-neutral-900 text-sm">
-                                    En Justo ingrese con la meta de co-crear un área de datos solicida y confiable 
-                                    para esto me contrataron como Data Scientist en el área de BI. Mi primero proyecto 
-                                    fue automatizar la ingesta de datos de la BBDD interna de BI (Postgres), para esto 
-                                    implemente Airflow en un servidor de Digital Ocean.
-                                </p>       
-                            </div>
-                        </div>  
-                    </div>
-                
-                    <div class="rounded-xl p-3 shadow border border-gray-50 my-2">
-                        <div class="flex items-center">
-                            <div class="ml-1">
-                                <div class="">
-                                    <p class=>Practica profesional - Credicorp</p>
-                                    <span class="text-neutral-600 text-sm">Agosto 2021 - Octubre 2021</span>
-                                </div>
-                                <p class="text-neutral-900 text-sm">
-                                    En Justo ingrese con la meta de co-crear un área de datos solicida y confiable 
-                                    para esto me contrataron como Data Scientist en el área de BI. Mi primero proyecto 
-                                    fue automatizar la ingesta de datos de la BBDD interna de BI (Postgres), para esto 
-                                    implemente Airflow en un servidor de Digital Ocean.
-                                </p>       
-                            </div>
-                        </div>  
-                    </div>
-
-                    <div class="rounded-xl p-3 shadow border border-gray-50 my-2">
-                        <div class="flex items-center">
-                            <div class="ml-1">
-                                <div class="">
-                                    <p class=>Ayudante programación - Universidad Adolfo Ibañez</p>
-                                    <span class="text-neutral-600 text-sm">2 Semestres</span>
-                                </div>
-                                <p class="text-neutral-900 text-sm">
-                                    Realizaba ayudantias de programación en Python, donde revisaba controles y 
-                                    ejercicios practicos para los alumnos.
-                                </p>       
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-
-                <!--Projects-->
-                <div>
-                    <h1 class="text-2xl tracking-[0.3rem] mt-10">Proyectos</h1>
-
-                    <div class="rounded-xl p-3 shadow border border-gray-50 my-2">
-                        <div class="flex items-center">
-                            <div class="ml-1">
-                                <div class="">
-                                    <p class=>Hase</p>
-                                    <span class="text-neutral-600 text-sm">Noviembre 2022 - Actualidad</span>
-                                </div>
-                                <p class="text-neutral-900 text-sm">
-                                    Es una plataforma de mentoring que permite a traves de un sistema de puntos 
-                                    recompenzar a colaboradores de un workspace, por realizar programas para potenciar 
-                                    el crecimiento personal.
-                                    <br><br>
-                                    La plataforma esta integrada con Google calendar y verificada por Google, por lo tanto,
-                                    las reuniones que se crean dentro de la plataforma automaticamente se agendan en calendar.
-                                    <br><br>
-                                    La principal tecnologia que utilice fue Django, la app esta hosteada en Heroku, para el front use Tailwind. 
-                                    Además cuenta con una API para correr 2 microservicios, fotos de unsplash basada en una palabra en español 
-                                    <a href="https://api.gethase.com/unsplash_images/?query=auto&format=json" target="_blank" rel="noopener noreferrer" class="text-indigo-500 hover:underline">ejemplo palabra auto</a>
-                                    y verificación de link de agenda para Creación de url unica <a href="https://agenda.gethase.com/jose-izam" target="_blank" rel="noopener noreferrer" class="text-indigo-500 hover:underline">ejemplo url agenda</a>.
-                                    <br>
-                                    <div class="flex justify-end">
-                                        <a href="http://app.gethase.com" target="_blank" rel="noopener noreferrer" class="text-indigo-500 hover:underline">Acceder al proyecto</a>
-                                    </div>
-                                </p>       
-                            </div>
-                        </div>  
-                    </div>
-
-                    <div class="rounded-xl p-3 shadow border border-gray-50 my-2">
-                        <div class="flex items-center">
-                            <div class="ml-1">
-                                <div class="">
-                                    <p class=>RoomieHood</p>
-                                    <span class="text-neutral-600 text-sm">Marzo 2022 - Diciembre 2022</span>
-                                </div>
-                                <p class="text-neutral-900 text-sm">
-                                    RoomieHood fue mi proyecto de titulo, se trata de una plataforma para Co-arriendo 
-                                    inmobiliario, nace a partir de un problema con la estructura actual de arriendos en Chile 
-                                    que dificulta este metodo de arriendo.
-                                    <br><br>
-                                    La idea principal es que el software permitiera a los arrendatarios pagar por separado 
-                                    las responsabilidades del arriendo, proporcionalmente al espacio común y propio que utilizan 
-                                    en la propiedad.
-                                    <br><br>
-                                    La principal tecnologia que utilice fue Django, la app esta hosteada en Heroku, para el front use Tailwind. 
-                                    <br><br>
-                                    El status del proyecto es incierto por el interes de una reconocida inmobiliaria, por el momento,
-                                    se encuentra en pausa.
-                                    <div class="flex justify-end">
-                                        <a href="http://www.roomiehood.cl" target="_blank" rel="noopener noreferrer" class="text-indigo-500 hover:underline">Acceder al proyecto</a>
-                                    </div>
-                                </p>       
-                            </div>
-                        </div>  
-                    </div>
-                </div>
+            <div class="col-span-3 px-3" id="sections">
 
             </div>
 
@@ -245,29 +123,5 @@
 
     </body>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-    <script>
-            function generatePDF() {
-                const element = document.body;
-                var opt = {
-                    margin:       -10,
-                    filename:     'Jose Izam-CV.pdf',
-                    html2canvas:  { scale: 2 },
-                    jsPDF:{  
-                            orientation: 'l',
-                            unit: 'mm',
-                            format: 'a4',
-                            floatPrecision: 16
-                            }
-                };
-                html2pdf().set(opt).from(element).save(); 
-                }
-                
-                function downloadCode(){
-                generatePDF();
-            }
-    </script>
 </html>
 

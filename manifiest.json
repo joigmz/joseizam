@@ -5,7 +5,7 @@
         "Description":"Tengo pasión sobre el mundo de las tecnologías, no me limito a aprender solo aquellas relacionadas al Data Science, también exploró áreas como el desarrollo Web tanto Backend como Frontend, por otra parte, tengo capacidad para resolver y llevar proyectos de forma autónoma o en equipo.",
         "Location":"Santiago, Chile",
         "Email":"Jose.izam99@gmail.com",
-        "ProfileIMG":null
+        "ProfileIMG":"static/img/1622608198300.jpeg"
     },
     "Social": {
         "Linkedin":{
@@ -20,11 +20,9 @@
     "Education": [
         {
             "Title":"Ingeniería Civil Industrial, Mención TI",
-            "Institution":"Universidad Adofo Ibañez (2017-2022)",
-            "Duration":"(2017-2022)"
+            "Institution":"Universidad Adofo Ibañez (2017-2022)"
         }
     ],
-    "Lenguajes": ["Español nativo","Ingles B1"],
     "Section":[
         {
             "Title" : "Experiencia Laboral",
@@ -32,7 +30,7 @@
             "block" : [
                 {
                     "Title":"Data Engineer - Justo YC-S20",
-                    "Duration":"Enero 2022 - Abril 2024",
+                    "Duration":"Enero 2022 - Actualidad",
                     "Description":"En Justo ingrese con la meta de co-crear un área de datos solicida y confiable para esto me contrataron como Data Engineer en el área de BI. Mi primero proyecto fue automatizar la ingesta de datos de la BBDD interna de BI (Postgres), para esto implemente Airflow en un servidor de Digital Ocean."
                 },
                 {

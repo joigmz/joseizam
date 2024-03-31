@@ -1,15 +1,69 @@
+function getProfile(profile) {
+    const ProfileIMG = document.getElementById("ProfileIMG");
+    const profileName = document.getElementById("profileName");
+    const profileTitle = document.getElementById("profileTitle");
+    const profileDescription = document.getElementById("profileDescription");
+    const profileLocation = document.getElementById("profileLocation");
+    const profileEmail = document.getElementById("profileEmail");
+
+    ProfileIMG.src = profile.ProfileIMG;
+    profileName.textContent = profile.Name;
+    profileTitle.textContent = profile.Title;
+    profileDescription.textContent = profile.Description;
+    profileLocation.textContent = profile.Location;
+    profileEmail.textContent = profile.Email;
+
+}
+
+function getSocial(social) {
+    const socialLinkedin= document.getElementById("socialLinkedin");
+
+    socialLinkedin.href = social.Linkedin.URL;
+    socialLinkedin.textContent = social.Linkedin.Title;
+
+    const socialGitHub= document.getElementById("socialGitHub");
+    socialGitHub.href = social.GitHub.URL;
+    socialGitHub.textContent = social.GitHub.Title;
+
+}
+
+function educationBlock(block) {
+    const div = document.createElement("div");
+    const title = document.createElement("h1");
+    const Institution = document.createElement("p");
+
+    Institution.classList.add("text-neutral-600", "text-sm");
+
+    title.textContent = block.Title;
+    Institution.textContent = block.Institution;
+
+    div.appendChild(title);
+    div.appendChild(Institution);
+
+    return div
+}
+
+function getEducation(education) {
+    const educationDiv = document.getElementById("Education");
+
+    education.forEach(block => {
+        educationDiv.appendChild(educationBlock(block))
+    });
+
+}
+
 function createSection(section) {
     const sectionsContainer = document.getElementById("sections");
     const sectionDiv = document.createElement("section");
 
     const h1Title = document.createElement("h1");
-    h1Title.classList.add("text-2xl", "tracking-[0.3rem]", "mt-10");
+    h1Title.classList.add("text-2xl", "tracking-[0.3rem]");
     h1Title.textContent = section.Title;
 
     sectionDiv.appendChild(h1Title);
     sectionsContainer.appendChild(sectionDiv);
 
-    return sectionsContainer
+    return sectionDiv
 }
 
 function createBlock(block) {
@@ -38,34 +92,6 @@ function createBlock(block) {
     divInner.appendChild(pDescription);
 
     return divOuter
-}
-
-
-function getProfile(profile) {
-    const profileName = document.getElementById("profileName");
-    const profileTitle = document.getElementById("profileTitle");
-    const profileDescription = document.getElementById("profileDescription");
-    const profileLocation = document.getElementById("profileLocation");
-    const profileEmail = document.getElementById("profileEmail");
-
-    profileName.textContent = profile.Name;
-    profileTitle.textContent = profile.Title;
-    profileDescription.textContent = profile.Description;
-    profileLocation.textContent = profile.Location;
-    profileEmail.textContent = profile.Email;
-
-}
-
-function getSocial(social) {
-    const socialLinkedin= document.getElementById("socialLinkedin");
-
-    socialLinkedin.href = social.Linkedin.URL;
-    socialLinkedin.textContent = social.Linkedin.Title;
-
-    const socialGitHub= document.getElementById("socialGitHub");
-    socialGitHub.href = social.GitHub.URL;
-    socialGitHub.textContent = social.GitHub.Title;
-
 }
 
 function getSections(sections) {
@@ -100,6 +126,7 @@ async function getManifiest() {
 function populateResume(manifiest) {    
     getProfile(manifiest.Profile);
     getSocial(manifiest.Social);
+    getEducation(manifiest.Education);
     getSections(manifiest.Section);
 
 }

@@ -75,7 +75,7 @@ function createBlock(block) {
     const url = document.createElement("a");
 
     // Agregar clases
-    divOuter.classList.add("rounded-xl", "p-3", "shadow", "border", "border-gray-50", "my-2");
+    divOuter.classList.add("rounded-xl", "p-3", "border", "my-2");
     divInner.classList.add("grid");
     pJobTitle.classList.add("text-neutral-700", "font-medium");
     spanDate.classList.add("text-neutral-600", "text-xs");

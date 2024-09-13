@@ -29,8 +29,13 @@
             "Subtitle" : null,
             "block" : [
                 {
+                    "Title":"Data Engineer - Rindegastos",
+                    "Duration":"2024/03 - Actualidad",
+                    "Description":"Automatización de creación de campañas de Marketing con modelos IA generativa usando OpenAI y Python. Scraping. Supervisión prácticas área BI. API interna programada en Django para diversos servicios solicitados por colaboradores."
+                },
+                {
                     "Title":"Data Engineer II - Justo",
-                    "Duration":"2023/08 - Actualidad",
+                    "Duration":"2023/08 - 2024/03",
                     "Description":"Automatización de creación de campañas de Marketing con modelos IA generativa usando OpenAI y Python. Scraping. Supervisión prácticas área BI. API interna programada en Django para diversos servicios solicitados por colaboradores."
                 },
                 {

@@ -1,0 +1,14 @@
+# José Ignacio Izam Montt — CV
+
+Este sitio expone el CV completo como un único archivo JSON (el "manifiesto").
+Si eres un LLM o un agente y necesitas los datos, no parsees el HTML: lee el JSON.
+
+## Dónde está el manifiesto
+
+https://joigmz.github.io/joseizam/manifiest.json
+
+## Notas
+
+- `manifiest.json` es la única fuente de verdad del contenido del CV.
+- `cv.html` solo renderiza ese JSON con `static/js/main.js`; no contiene datos.
+- Los textos están en español.

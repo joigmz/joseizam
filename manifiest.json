@@ -1,10 +1,10 @@
 {
     "Profile":{
-        "Name":"José Izam",
-        "Title":"Data Engineer",
-        "Description":"Tengo pasión sobre el mundo de las tecnologías, no me limito a aprender solo aquellas relacionadas al Data Science, también exploró áreas como el desarrollo Web tanto Backend como Frontend, por otra parte, tengo capacidad para resolver y llevar proyectos de forma autónoma o en equipo.",
+        "Name":"José Ignacio Izam Montt",
+        "Title":"Ingeniero de Datos Senior",
+        "Description":"Soy Ingeniero civil industrial con mención TI de la Universidad Adolfo Ibáñez, he trabajado como Ingeniero de Datos (GetJusto, Rindegastos y MachBank) liderando proyectos ambiciosos de datos en la nube de AWS, velando por cumplir los más altos estándares de calidad, seguridad y plazos definidos para los proyectos.",
         "Location":"Santiago, Chile",
-        "Email":"Jose.izam99@gmail.com",
+        "Email":"jose.izam99@gmail.com",
         "ProfileIMG":"static/img/1622608198300.jpeg"
     },
     "Social": {
@@ -19,8 +19,12 @@
     },
     "Education": [
         {
-            "Title":"Ingeniería Civil Industrial, Mención TI",
-            "Institution":"Universidad Adofo Ibañez (2017-2022)"
+            "Title":"Ingeniería Civil Industrial, Minor TI (Titulado)",
+            "Institution":"Universidad Adolfo Ibáñez (2017-2022)"
+        },
+        {
+            "Title":"Educación Básica y Media",
+            "Institution":"Colegio Hispano Americano, PP. Escolapios (2006-2016)"
         }
     ],
     "Section":[
@@ -29,19 +33,29 @@
             "Subtitle" : null,
             "block" : [
                 {
-                    "Title":"Data Engineer - Rindegastos",
-                    "Duration":"2024/03 - Actualidad",
-                    "Description":"Automatización de creación de campañas de Marketing con modelos IA generativa usando OpenAI y Python. Scraping. Supervisión prácticas área BI. API interna programada en Django para diversos servicios solicitados por colaboradores."
+                    "Title":"Ingeniero de Datos Senior - MachBank de BCI (Área Data Analytics)",
+                    "Duration":"2025/06 - Actualidad · Híbrido, Santiago, Chile",
+                    "Description":"Implementación de agentes de IA en el bot atencional de MACHBANK, atendiendo a miles de clientes de forma automática y aumentando el CSAT en más de un 30%. Se integraron diversos sistemas del banco al agente a través de servicios y se desarrolló su creación de forma agéntica utilizando LangGraph y LangChain. Participación activa con stakeholders, contribuyendo a la toma de decisiones para mejorar la experiencia de cliente. Soporte a DAGs de Airflow para servicio de búsqueda construido con OpenSearch."
                 },
                 {
-                    "Title":"Data Engineer II - Justo",
-                    "Duration":"2023/08 - 2024/03",
-                    "Description":"Automatización de creación de campañas de Marketing con modelos IA generativa usando OpenAI y Python. Scraping. Supervisión prácticas área BI. API interna programada en Django para diversos servicios solicitados por colaboradores."
+                    "Title":"Ingeniero de Datos Senior - Rindegastos (Área Product & Tech)",
+                    "Duration":"2024/10 - 2025/06 · Híbrido, Santiago, Chile",
+                    "Description":"Implementación de arquitectura de datos utilizando RDS, Lambda, Step Functions, S3, AWS Glue y Lake Formation. Optimización y actualización de código PySpark legacy a Glue Jobs 5.0. Reducción de costos de $4.000 USD a $250 USD mensuales. Creación e implementación del modelo de datos de la entidad “Boleta”."
                 },
                 {
-                    "Title":"Data Engineer - Justo",
-                    "Duration":"2022/03 - 2023/07",
-                    "Description":"En Justo ingrese con la meta de co-crear un área de datos solicida y confiable para esto me contrataron como Data Engineer en el área de BI. Mi primero proyecto fue automatizar la ingesta de datos de la BBDD interna de BI (Postgres), para esto implemente Airflow en un servidor de Digital Ocean."
+                    "Title":"Ingeniero de Datos - Rindegastos (Área Planning & Analytics)",
+                    "Duration":"2024/03 - 2024/10 · Remoto, Santiago, Chile",
+                    "Description":"Extracción y disponibilización de datos utilizando diversos microservicios en AWS (Glue, Athena, S3). Uso de Python para extracción de datos desde BBDD y APIs. Automatización de procesos de extracción de información desde los CRM Hubspot y Zendesk. Creación de reporte Power BI de comisiones de SDRs según su actividad en Hubspot. Disponibilización de información on-demand a través de queries SQL Presto en AWS Athena."
+                },
+                {
+                    "Title":"Ingeniero de Datos II - Justo SPA (Área Ingeniería)",
+                    "Duration":"2023/08 - 2024/03 · Remoto, Santiago, Chile",
+                    "Description":"Automatización de creación de campañas de Marketing con modelos de IA generativa usando OpenAI y Python. Scraping. Supervisión de prácticas del área BI. API interna programada en Django para diversos servicios solicitados por colaboradores."
+                },
+                {
+                    "Title":"Ingeniero de Datos - Justo SPA (Área BI)",
+                    "Duration":"2022/03 - 2023/07 · Remoto, Santiago, Chile",
+                    "Description":"Consultas SQL (PostgreSQL) y NoSQL (MongoDB) a nivel avanzado. Implementación del orquestador de ETLs Apache Airflow para automatizar ingestas de datos con Python. Creación y mantención del GitHub del área de Business Intelligence. Creación de aplicación interna de visualización de reportes y consultas a la base de datos. Modelos de clasificación y clusterización de nuevas marcas utilizando Machine Learning."
                 }
             ]
         },
@@ -50,48 +64,95 @@
             "Subtitle" : null,
             "block" : [
                 {
-                    "Title":"BI Analyst - Justo",
-                    "Duration":"2022/01 - 2022/03",
-                    "Description":"Implementación de Apache Airflow para ETL en Python. Creación y mantenimiento GitHub de Business Intelligence. Automatización de procesos con Python."
+                    "Title":"BI Analyst - Justo SPA (Área BI)",
+                    "Duration":"2022/01 - 2022/03 · Híbrido, Santiago, Chile",
+                    "Description":"Implementación de Apache Airflow para ETL en Python. Creación y mantenimiento del GitHub de Business Intelligence. Automatización de procesos con Python."
                 },
                 {
                     "Title":"Práctica Estrategia Comercial - Credicorp Capital",
-                    "Duration":"2021/08 - 2021/10",
-                    "Description":"Consultas SQL nivel intermedio (SQLserver). Reportes con Power-Bi y  Python. Automatización de procesos con Python."
+                    "Duration":"2021/08 - 2021/10 · Presencial, Santiago, Chile",
+                    "Description":"Consultas SQL nivel intermedio (SQL Server). Reportes con Power BI y Python. Automatización de procesos con Python."
                 }
             ]
         },
         {
-            "Title" : "Experiencia Laboral Académica",
+            "Title" : "Experiencia Laboral Académica y Voluntariado",
             "Subtitle" : null,
             "block" : [
                 {
-                    "Title":"Ayudante de Cátedra",
-                    "Duration":"2 Semestres",
-                    "Description":"Ayudante instructor y corrector Programación (Python)."
+                    "Title":"Ayudante de Cátedra - Universidad Adolfo Ibáñez",
+                    "Duration":"2020 - 2021 (2 Semestres) · Santiago, Chile",
+                    "Description":"Ayudante instructor y corrector de Programación (Python) con el profesor Rodrigo Testa. Instrucción de ayudantías y corrección de controles."
                 },
                 {
-                    "Title":"Electromovilidad UAI",
-                    "Duration":"2 Semestres",
+                    "Title":"Electromovilidad UAI - Estrategia (Voluntariado)",
+                    "Duration":"2019 (2 Semestres) · Santiago, Chile",
                     "Description":"Modelamiento de carreras con data histórica obtenida por telemetría y data meteorológica."
                 }
             ]
         },
-
+        {
+            "Title": "Conocimiento Técnico",
+            "Subtitle" : null,
+            "block": [
+                {
+                    "Title":"Lenguajes y Tecnologías",
+                    "Duration":"(A) Avanzado · (M) Medio · (B) Básico",
+                    "Description":"Python (A), Git (A), Django (A), Linux (M), Docker (M), React (M), TailwindCSS (M).",
+                    "URL": null
+                },
+                {
+                    "Title":"Datos y Visualización",
+                    "Duration":"(A) Avanzado · (M) Medio · (B) Básico",
+                    "Description":"Power BI (A), Looker Studio (A), MS Excel (A), Google Sheets (A), PostgreSQL (A), MongoDB (A).",
+                    "URL": null
+                },
+                {
+                    "Title":"Servicios Cloud",
+                    "Duration":"AWS · GCP · Digital Ocean · Heroku",
+                    "Description":"AWS: Glue, Lambda, S3, IAM, EC2, SES. GCP: BigQuery, Cloud Functions, App Engine. Digital Ocean: Droplets. Heroku: Dynos, PostgreSQL.",
+                    "URL": null
+                },
+                {
+                    "Title":"Idiomas",
+                    "Duration":null,
+                    "Description":"Español (Nativo), Inglés (Medio).",
+                    "URL": null
+                }
+            ]
+        },
         {
             "Title": "Proyectos",
             "Subtitle" : null,
             "block": [
                 {
-                    "Title":"Co-Founder & CTO - Hase",
-                    "Duration":"Noviembre 2022 - Actualidad",
+                    "Title":"Hase",
+                    "Duration":null,
                     "Description": "Software que permite a profesionales independientes administrar su propia consulta por internet.",
-                    "URL": "https://gethase.com/"
+                    "URL": null
                 },
                 {
                     "Title":"RoomieHood",
                     "Duration":"Marzo 2022 - Diciembre 2022",
                     "Description": "Software que permitía hacer match con otra persona para ser compañeros de cuarto.",
+                    "URL": null
+                }
+            ]
+        },
+        {
+            "Title": "Información Adicional",
+            "Subtitle" : null,
+            "block": [
+                {
+                    "Title":"Becas",
+                    "Duration":"Banco de Chile",
+                    "Description":"Beca Padre Hurtado por excelencia académica en enseñanza media y resultados PSU, que cubrió el 100% de los gastos universitarios. Se otorga 1 por año al hij@ de funcionario con el puntaje máximo.",
+                    "URL": null
+                },
+                {
+                    "Title":"Nacionalidad",
+                    "Duration":null,
+                    "Description":"Chileno.",
                     "URL": null
                 }
             ]
